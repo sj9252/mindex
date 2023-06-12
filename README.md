@@ -16,7 +16,7 @@ This repository contains code for the Mindex challenge, which involves processin
 The Mindex challenge is a data processing project that involves merging multiple CSV files, renaming columns, replacing values, and loading the data into a PostgreSQL database. The project is implemented using Python and relies on the Boto3 library for AWS S3 integration and the psycopg2 library for PostgreSQL database connectivity.
 
 The main components of the project includes:
-- `Mindexcompletecode.py`: Python script that performs the data processing and database loading tasks.
+- `Mindexcompletecode.ipynb`: Python script that performs the data processing and database loading tasks.
 - `Mindex.sql`: SQL script containing the query for the view.
 
 ## Getting Started
@@ -35,10 +35,10 @@ To run the code in this project, you need the following prerequisites:
 
 1. Clone or download the repository from [https://github.com/sj9252/mindex/releases/tag/Mindex](https://github.com/sj9252/mindex/releases/tag/Mindex).
 
-2. Install the required Python libraries. Run the following command in your terminal:
+2. Install the required Python libraries. Run the following command in your terminal or you can also run the first cell in jupyter notebook which  has pip installation for all libraries:
 
    ```bash
-   pip install boto3 pandas sqlalchemy psycopg2
+   pip install -r requirements.txt
    
 3. Set up the PostgreSQL database. You can use the provided Mindex.sql script to create the final output as required. Execute the script in your PostgreSQL database management tool (DBeaver).
    
@@ -51,14 +51,12 @@ To use the Mindex project:
 1. Open the Mindexcompletecode.ipynb script in a text editor or Python IDE.
 
 2. Run the Mindexcompletecode.ipynb script:
-   
-   python Mindexcompletecode.py
 
-4. The script will connect to the AWS S3 bucket, download the CSV files, perform data processing tasks, merge the datafiles, check if there are columns in the table, create new columns in database,checks for the added columns,load the data into the PostgreSQL database,checks for the loaded data.
+3. The script will connect to the AWS S3 bucket, download the CSV files, perform data processing tasks, merge the datafiles, check if there are columns in the table, create new columns in database,checks for the added columns,load the data into the PostgreSQL database,checks for the loaded data.
 
-5. Run the Mindex.sql file
+4. Run the Mindex.sql file
 
-6. The script will show the total yards for each receiver output Boyd Yards, Higgins Yards, Chase Yards and Win/Loss
+5. The script will show the total yards for each receiver output Boyd Yards, Higgins Yards, Chase Yards and Win/Loss
 
 ## Contributing
 
