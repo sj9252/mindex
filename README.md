@@ -28,6 +28,7 @@ To run the code in this project, you need the following prerequisites:
 - Python 3.x
 - Boto3 library (for AWS S3 integration)
 - Psycopg2 library (for PostgreSQL database connectivity)
+- Pandas library 
 - PostgreSQL database (you can use an existing installation or set up a new one)
 - Dbeaver (to view and ensure all required data is present)
 
